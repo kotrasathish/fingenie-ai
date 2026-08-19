@@ -1,0 +1,9 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.git/
+.idea/
+.vscode/
+vectorstore/.env
+.env

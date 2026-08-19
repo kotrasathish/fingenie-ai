@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinGenie AI</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>  
+
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="bi bi-credit-card-2-front-fill"></i>
+
+            <span>FinGenie AI</span>
+
+        </div>
+
+        <button id="new-chat" class="new-chat-btn">
+
+            <i class="bi bi-plus-lg"></i>
+
+            New Chat
+
+        </button>
+
+        <div class="sidebar-title">
+
+            Conversations
+
+        </div>
+
+        <div id="conversation-list">
+
+            <!-- Loaded using JavaScript -->
+
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="chat-page">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <h4>AI Financial Assistant</h4>
+
+            <div class="profile">
+
+                <i class="bi bi-person-circle"></i>
+
+            </div>
+
+        </header>
+
+        <!-- Chat -->
+
+        <section id="chat-box" class="chat-box">
+
+            <div class="welcome">
+
+                <h2>👋 Welcome to FinGenie AI</h2>
+
+                <p>
+
+                    Ask anything about
+
+                    Credit Cards,
+
+                    Personal Loans,
+
+                    Home Loans,
+
+                    EMI,
+
+                    Vehicle Loans,
+
+                    or CIBIL Score.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Input -->
+
+        <footer class="input-area">
+
+            <div class="input-wrapper">
+
+                <input
+
+                    id="message"
+
+                    type="text"
+
+                    placeholder="Ask anything about finance...">
+
+                <button
+
+                    id="send-btn"
+
+                    onclick="sendMessage()">
+
+                    <i class="bi bi-send-fill"></i>
+
+                </button>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
